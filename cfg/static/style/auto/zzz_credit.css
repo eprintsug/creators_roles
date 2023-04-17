@@ -1,0 +1,52 @@
+
+.credit_options {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+  }
+    
+  .grid {
+    display: table;
+  }
+  
+  .grid-line {
+    display: table-row;
+  }
+  
+  .grid-line div {
+    display: table-cell;
+  }
+  
+  .cr-line {
+    display:block;
+  }
+  
+  .credit-options-display {
+      width: 300px;
+    display: inline-block;
+  }
+ 
+  .cr-btn {
+    background-color: #dadada;
+    color: black;
+  }
+
+  .cr-btn-large {
+    width: 70%;
+  }
+
+  .cr-btn-small {
+    width: 10%;
+  }
+  
+  .cr-btn-selected {
+    background: #1c4173;
+    color: white;
+  }
+
+  .cr-hidden
+  {
+    display: none;
+  }

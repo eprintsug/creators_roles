@@ -1,0 +1,39 @@
+#!/usr/bin/perl
+
+our $MAXSIZE = 1 * 1024 * 1024;
+
+use EPrints;
+
+my $repo = EPrints->new->current_repository;
+exit if !defined $repo;
+
+my $r = $repo->get_request;
+
+my @credit_ns = $repo->get_types("credit");
+my @credit_size_ns = $repo->get_types("credit_size");
+my %output;
+my %credit_roles;
+
+foreach my $credit_role_ns_key (@credit_ns)
+{
+    $credit_roles{$credit_role_ns_key} = $repo->phrase("credit_rolename_".$credit_role_ns_key);
+}
+$output{"credit_roles"} = \%credit_roles;
+
+my %credit_sizes_short;
+foreach my $credit_size_ns_key (@credit_size_ns)
+{ 
+    $credit_sizes_short{$credit_size_ns_key} = $repo->phrase("credit_size_typename_short_".$credit_size_ns_key);
+}
+$output{"credit_sizes_short"} = \%credit_sizes_short;
+
+my %credit_sizes_long;
+foreach my $credit_size_ns_key (@credit_size_ns)
+{
+    $credit_sizes_long{$credit_size_ns_key} = $repo->phrase("credit_size_typename_".$credit_size_ns_key);
+}
+$output{"credit_sizes_long"} = \%credit_sizes_long;
+
+$r->content_type( "application/json" );
+binmode( STDOUT, ":utf8" );
+print JSON::encode_json( \%output );
