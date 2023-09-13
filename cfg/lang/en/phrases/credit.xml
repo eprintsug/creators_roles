@@ -5,31 +5,45 @@
 <!-- Eprint fields -->
 
 <epp:phrase id="eprint_fieldname_creators_roles">Creator Roles</epp:phrase>
+
 <epp:phrase id="eprint_fieldname_creators_roles_name">Name</epp:phrase>
 <epp:phrase id="eprint_fieldhelp_creators_roles" type="XHTML">
 		<p>Add a role for each creator on the item.</p>
 		<p><a target="_blank" href="https://casrai.org/credit/">https://casrai.org/credit/</a></p>
 </epp:phrase>
 
-<epp:phrase id="metapage_title_roles">Roles</epp:phrase>
+<epp:phrase id="eprint_fieldname_creators_credit_roles">Creator's <abbr title="Contributor Roles Taxonomy">CRediT</abbr> Roles</epp:phrase>
+<epp:phrase id="eprint_fieldhelp_creators_credit_roles"></epp:phrase>
 
 <epp:phrase id="eprint_fieldname_creators_roles_id">ID</epp:phrase>
 <epp:phrase id="eprint_fieldname_creators_roles_role">Role</epp:phrase>
+<epp:phrase id="lib/metafield:join_CreditRole">, </epp:phrase>
 
+<epp:phrase id="credit_rolename_conceptualization">Conceptualisation</epp:phrase>
+<epp:phrase id="credit_rolename_data-curation">Data curation</epp:phrase>
+<epp:phrase id="credit_rolename_formal-analysis">Formal analysis</epp:phrase>
+<epp:phrase id="credit_rolename_funding-acquisition">Funding acquisition</epp:phrase>
+<epp:phrase id="credit_rolename_investigation">Investigation</epp:phrase>
+<epp:phrase id="credit_rolename_methodology">Methodology</epp:phrase>
+<epp:phrase id="credit_rolename_project-administration">Project administration</epp:phrase>
+<epp:phrase id="credit_rolename_resources">Resources</epp:phrase>
+<epp:phrase id="credit_rolename_software">Software</epp:phrase>
+<epp:phrase id="credit_rolename_supervision">Supervision</epp:phrase>
+<epp:phrase id="credit_rolename_validation">Validation</epp:phrase>
+<epp:phrase id="credit_rolename_visualization">Visualisation</epp:phrase>
+<epp:phrase id="credit_rolename_writing-original-draft">Writing - original draft</epp:phrase>
+<epp:phrase id="credit_rolename_writing-review-editing">Writing - review and editing</epp:phrase>
 
-<epp:phrase id="credit_typename_conceptualization">Conceptualization</epp:phrase>
-<epp:phrase id="credit_typename_data_curation">Data curation</epp:phrase>
-<epp:phrase id="credit_typename_formal_analysis">Formal analysis</epp:phrase>
-<epp:phrase id="credit_typename_funding_acquisition">Funding acquisition</epp:phrase>
-<epp:phrase id="credit_typename_investigation">Investigation</epp:phrase>
-<epp:phrase id="credit_typename_methodology">Methodology</epp:phrase>
-<epp:phrase id="credit_typename_project_administration">Project administration</epp:phrase>
-<epp:phrase id="credit_typename_resources">Resources</epp:phrase>
-<epp:phrase id="credit_typename_software">Software</epp:phrase>
-<epp:phrase id="credit_typename_supervision">Supervision</epp:phrase>
-<epp:phrase id="credit_typename_validation">Validation</epp:phrase>
-<epp:phrase id="credit_typename_visualization">Visualization</epp:phrase>
-<epp:phrase id="credit_typename_writing_original_draft">Writing – original draft</epp:phrase>
-<epp:phrase id="credit_typename_writing_review_editing">Writing – review and editing</epp:phrase>
+<epp:phrase id="credit_size_typename_short_l">L</epp:phrase>
+<epp:phrase id="credit_size_typename_short_e">E</epp:phrase>
+<epp:phrase id="credit_size_typename_short_s">S</epp:phrase>
 
+<epp:phrase id="credit_size_typename_l">Lead</epp:phrase>
+<epp:phrase id="credit_size_typename_e">Equal</epp:phrase>
+<epp:phrase id="credit_size_typename_s">Supporting</epp:phrase>
+
+<epp:phrase id="credit_optsbtn_open">Open</epp:phrase>
+<epp:phrase id="credit_optsbtn_close">Close</epp:phrase>
+
+<epp:phrase id="lib/searchfield:help_CreditRole">Find items with the specified credit roles.</epp:phrase>
 </epp:phrases>
