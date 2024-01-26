@@ -23,12 +23,18 @@ not done
 
 package EPrints::MetaField::CreditRole;
 
-use EPrints::MetaField::Id;
-use JSON;
-
-@ISA = qw( EPrints::MetaField::Longtext );
-
 use strict;
+use warnings;
+
+use JSON;
+use EPrints::MetaField::Id;
+
+BEGIN
+{
+	our( @ISA );
+	@ISA = qw( EPrints::MetaField::Longtext );
+}
+
 
 sub allow_edit
 {
