@@ -1,0 +1,79 @@
+
+.credit_options {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+  }
+    
+  .grid {
+    display: table;
+  }
+  
+  .grid-line {
+    display: table-row;
+  }
+  
+  .grid-line div {
+    display: table-cell;
+  }
+  
+  .cr-line {
+    display:block;
+  }
+  
+  .credit-options-display {
+      width: 300px;
+    display: inline-block;
+  }
+ 
+  .cr-btn {
+    background-color: #dadada;
+    color: black;
+  }
+
+  .cr-btn:hover  {
+    font-weight: bold;
+  }
+
+  .cr-btn:focus-visible  {
+    background: white;
+    color: #1c4173;
+    font-weight: bold;
+  }
+
+  .cr-btn-large {
+    width: 70%;
+  }
+
+  .cr-btn-small {
+    width: 10%;
+  }
+  
+  .cr-btn-selected {
+    background: #1c4173;
+    color: white;
+  }
+
+  .cr-hidden
+  {
+    display: none;
+  }
+
+  .creators_credit_roles_display
+  {
+    padding: 1px 2px 1px 2px;
+    margin-right: 4px;
+    border: solid 1px #ccc;
+    display: block;
+    min-height: 25px;
+    -webkit-box-sizing: border-box;
+    font-size: 14px;
+    color: #616161;
+    background: #f0f0f0;
+    font-weight: bold;
+    margin-right: 4px;
+    width: 70%;
+    display: inline-block;
+  }
