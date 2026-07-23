@@ -212,7 +212,7 @@ function cr_display_opts_buttons(opts_panel_id)
     }
     if (keys.length > 1)
     {
-       cr_display_contents += " + " + keys.length;
+       cr_display_contents += " + " + (keys.length - 1);
     }
 
     cr_display.textContent = cr_display_contents;
